@@ -1,0 +1,35 @@
+{
+  "name": "oguzlar-fis",
+  "productName": "Oğuzlar Fiş",
+  "version": "1.0.0",
+  "description": "Oğuzlar Manav Yönetim - Fiş / Teklif yazdırma masaüstü uygulaması",
+  "main": "main.js",
+  "author": "Oğuzlar Manav",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "icon": "node scripts/make-icon.js",
+    "dist": "electron-builder --win portable nsis --x64 --publish never"
+  },
+  "build": {
+    "appId": "com.oguzlar.fis",
+    "productName": "Oğuzlar Fiş",
+    "artifactName": "OguzlarFis-${version}-${target}.${ext}",
+    "directories": { "output": "dist", "buildResources": "build" },
+    "files": ["main.js", "preload.js", "src/**/*", "package.json"],
+    "win": { "icon": "build/icon.png", "target": ["portable", "nsis"] },
+    "portable": { "artifactName": "OguzlarFis-Tasinabilir.exe" },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "shortcutName": "Oğuzlar Fiş",
+      "artifactName": "OguzlarFis-Kurulum.exe"
+    }
+  },
+  "devDependencies": {
+    "electron": "^33.4.11",
+    "electron-builder": "^25.1.8"
+  }
+}

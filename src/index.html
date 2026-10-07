@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: blob:; style-src 'self' 'unsafe-inline'; frame-src 'self' about: data:; script-src 'self'">
+  <title>Oğuzlar Fiş</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <aside class="nav">
+    <div class="nav-brand">
+      <img id="navLogo" alt="">
+      <div>
+        <div class="nav-title">Oğuzlar Fiş</div>
+        <div class="nav-sub" id="navCompany"></div>
+      </div>
+    </div>
+    <button class="nav-btn active" data-view="sale"><span>🧾</span> Yeni Fiş <kbd>F1</kbd></button>
+    <button class="nav-btn" data-view="history"><span>📚</span> Fiş Geçmişi <kbd>F3</kbd></button>
+    <button class="nav-btn" data-view="products"><span>🍅</span> Ürünler</button>
+    <button class="nav-btn" data-view="customers"><span>👥</span> Müşteriler</button>
+    <button class="nav-btn" data-view="design"><span>🎨</span> Fiş Tasarımı</button>
+    <button class="nav-btn" data-view="settings"><span>⚙️</span> Ayarlar</button>
+    <div class="nav-foot" id="navClock"></div>
+  </aside>
+  <main id="main"></main>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-box">
+      <div class="modal-head"><h3 id="modalTitle"></h3><button class="x" data-close>✕</button></div>
+      <div class="modal-body" id="modalBody"></div>
+      <div class="modal-foot" id="modalFoot"></div>
+    </div>
+  </div>
+  <div id="toast" class="toast"></div>
+
+  <script src="receipt.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
