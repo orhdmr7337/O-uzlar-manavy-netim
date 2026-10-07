@@ -5,7 +5,9 @@ Fiş tasarımı program içinden tamamen özelleştirilebilir.
 
 ## 📥 İndir ve çalıştır
 
-**[Son sürümü indir → Releases](../../releases/latest)**
+**Hemen indir:** [`indir/OguzlarFis-Tasinabilir.exe`](../../raw/claude/desktop-app-receipt-design-pfmegy/indir/OguzlarFis-Tasinabilir.exe) — kurulum yok, çift tıkla çalışsın.
+
+GitHub Actions çalıştığında her sürüm ayrıca **[Releases](../../releases/latest)** sayfasına da otomatik eklenir:
 
 | Dosya | Açıklama |
 |---|---|
